@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		50C442A7206758E1009C2016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C442A6206758E1009C2016 /* AppDelegate.swift */; };
-		50C442A9206758E1009C2016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C442A8206758E1009C2016 /* ViewController.swift */; };
+		50C442A9206758E1009C2016 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C442A8206758E1009C2016 /* MainViewController.swift */; };
 		50C442AC206758E1009C2016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C442AA206758E1009C2016 /* Main.storyboard */; };
 		50C442AE206758E1009C2016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C442AD206758E1009C2016 /* Assets.xcassets */; };
 		50C442B1206758E1009C2016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C442AF206758E1009C2016 /* LaunchScreen.storyboard */; };
 		50C442BC206758E1009C2016 /* YoutubePlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C442BB206758E1009C2016 /* YoutubePlayerTests.swift */; };
 		50C442C7206758E1009C2016 /* YoutubePlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C442C6206758E1009C2016 /* YoutubePlayerUITests.swift */; };
+		50C442D520675B6B009C2016 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C442D420675B6B009C2016 /* still time.ttf */; };
+		50C442DD206784EC009C2016 /* VideoVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C442DC206784EC009C2016 /* VideoVc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		50C442A3206758E1009C2016 /* YoutubePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C442A6206758E1009C2016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50C442A8206758E1009C2016 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50C442A8206758E1009C2016 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		50C442AB206758E1009C2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50C442AD206758E1009C2016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50C442B0206758E1009C2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		50C442C2206758E1009C2016 /* YoutubePlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoutubePlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C442C6206758E1009C2016 /* YoutubePlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePlayerUITests.swift; sourceTree = "<group>"; };
 		50C442C8206758E1009C2016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C442D420675B6B009C2016 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		50C442DC206784EC009C2016 /* VideoVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,12 @@
 		50C442A5206758E1009C2016 /* YoutubePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				50C442D9206782EC009C2016 /* Files */,
+				50C442D8206782DE009C2016 /* Controller */,
+				50C442D7206782D8009C2016 /* View */,
+				50C442D6206782CF009C2016 /* Model */,
 				50C442A6206758E1009C2016 /* AppDelegate.swift */,
-				50C442A8206758E1009C2016 /* ViewController.swift */,
+				50C442D420675B6B009C2016 /* still time.ttf */,
 				50C442AA206758E1009C2016 /* Main.storyboard */,
 				50C442AD206758E1009C2016 /* Assets.xcassets */,
 				50C442AF206758E1009C2016 /* LaunchScreen.storyboard */,
@@ -123,6 +131,36 @@
 				50C442C8206758E1009C2016 /* Info.plist */,
 			);
 			path = YoutubePlayerUITests;
+			sourceTree = "<group>";
+		};
+		50C442D6206782CF009C2016 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50C442D7206782D8009C2016 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50C442D8206782DE009C2016 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50C442A8206758E1009C2016 /* MainViewController.swift */,
+				50C442DC206784EC009C2016 /* VideoVc.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		50C442D9206782EC009C2016 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C442B1206758E1009C2016 /* LaunchScreen.storyboard in Resources */,
+				50C442D520675B6B009C2016 /* still time.ttf in Resources */,
 				50C442AE206758E1009C2016 /* Assets.xcassets in Resources */,
 				50C442AC206758E1009C2016 /* Main.storyboard in Resources */,
 			);
@@ -259,7 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50C442A9206758E1009C2016 /* ViewController.swift in Sources */,
+				50C442DD206784EC009C2016 /* VideoVc.swift in Sources */,
+				50C442A9206758E1009C2016 /* MainViewController.swift in Sources */,
 				50C442A7206758E1009C2016 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
